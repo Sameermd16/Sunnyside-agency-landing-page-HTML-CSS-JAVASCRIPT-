@@ -7,15 +7,127 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-  About
+
+  <header>
+    <div class="logo-desktop">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="nav-desktop">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <button>CONTACT</button>
+    </div>
+  </header>
+  <small>WE ARE CREATIVES</small>
+  <div class="header-img">
+    <img src="images/desktop/image-header.jpg" alt="" width="100%">
+  </div>
+  <div class="arrow">
+    <img src="images/icon-arrow-down.svg" alt="">
+  </div>
+  <main class="grid-container">
+    <div class="grid text-grid-1">
+      <article>
+        <h2>  Transform your <br> brand      </h2>
+        <p>
+        We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#">LEARN MORE</a>
+      </article>
+      
+    </div>
+    <div class="grid egg">
+      <img src="images/desktop/image-transform.jpg" alt="">
+    </div>
+    <div class="grid glass">
+      <img src="images/desktop/image-stand-out.jpg" alt="">
+    </div>
+    <div class="grid text-grid-2">
+      <article>
+        <h2>Stand out to the right <br> audience</h2>
+        <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <a href="#">LEARN MORE</a>
+      </article>
+    </div>
+    <div class="grid berry">
+      <img src="images/desktop/image-graphic-design.jpg" alt="">
+      <div class="inner-div">
+        <h2>Graphic Design</h2>
+        <p>  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.        </p>
+      </div>
+    </div>
+    <div class="grid orange">
+      <img src="images/desktop/image-photography.jpg" alt="">
+      <div class="inner-div">
+        <h2>Photography</h2>
+        <p>    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </main>
+  <aside>
+    <h4>CLIENT TESTIMONIALS</h4>
+    <div class="flex-div">
+      <div class="flex-box">
+        <img src="images/image-emily.jpg" alt="">
+        <p>  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.        </p>
+        <h5>Emily R.</h5>
+        <span>Marketing Director</span>
+      </div>
+      <div class="flex-box">
+        <img src="images/image-thomas.jpg" alt="">
+        <p>    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.        </p>
+        <h5>  Thomas S.        </h5>
+        <span>  Chief Operating Officer        </span>
+      </div>
+      <div class="flex-box">
+        <img src="images/image-jennie.jpg" alt="">
+        <p>    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!        </p>
+        <h5>Jennie F.</h5>
+        <span>Business Owner</span>
+      </div>
+    </div>
+  </aside>
+  <main class="gallery-pics">
+    <div>
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-orange.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-cone.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+  </main>
+  <footer>
+    <div class="footer-div">
+      <div class="footer-logo">
+        <p>sunnyside</p>
+      </div>
+      <div class="footer-nav">
+       <a href="#">About</a>
+       <a href="#">Services</a>
+       <a href="#">Projects</a>
+      </div>
+      <div class="socials-div">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- About
   Services
   Projects
   Contact
@@ -58,11 +170,14 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Sameermd16">Sameer md</a>.
   </div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

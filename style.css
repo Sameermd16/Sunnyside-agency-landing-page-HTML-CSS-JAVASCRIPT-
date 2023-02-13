@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: absolute;
+
+}
+header .nav-desktop a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+header .nav-desktop button{
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+header .nav-desktop button:hover{
+    color: white;
+    background-color: transparent;
+}
+.arrow{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    /* border: 1px solid black; */
+}
+small{
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: white;
+    font-size: 50px;
+    font-family: 'Fraunces', serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.text-grid-1, .text-grid-2{
+    padding: 50px;
+    display: flex;
+    align-items: center; 
+}
+.grid article h2{
+    font-family: 'Fraunces', serif;
+}
+.grid img{
+    width: 100%;
+}
+article h2{
+    margin-bottom: 30px;
+    color: hsl(212, 27%, 19%);
+    font-size: 35px;
+}
+article p{
+    margin-bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    line-height: 25px;
+}
+article a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-family: Fraunces, serif;
+}
+.grid{
+   position: relative;
+}
+.berry .inner-div{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 350px;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+.berry .inner-div h2{
+    margin-bottom: 30px;
+    font-family: Fraunces, serif;
+}
+.berry .inner-div p{
+    line-height: 25px;
+    font-family: Barlow, serif;
+}
+.orange .inner-div{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 350px;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+}
+.orange .inner-div h2{
+    margin-bottom: 30px;
+    font-family: Fraunces, serif;
+}
+.orange .inner-div p{
+    line-height: 25px;
+    font-family: Barlow, serif;
+}
+aside{
+    margin: 120px 0;
+}
+aside h4{
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.flex-div{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    
+}
+.flex-box{
+    text-align: center;
+    padding: 0 20px;
+    /* border: 1px solid black; */
+    width: 400px;
+}
+.flex-box img{
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.flex-box p{
+    margin-bottom: 40px;
+    color: hsl(213, 9%, 39%);
+    
+    padding: 0 20px;
+    line-height: 25px;
+}
+.flex-box h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.flex-box span{
+    color: hsl(210, 4%, 67%);
+    font-size: 13px;
+}
+.gallery-pics{
+    display: flex;
+}
+.gallery-pics img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-div{
+    margin: 50px 0;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    margin-left: 30px;
+}
+.socials-div ion-icon{
+    color: hsl(167, 40%, 24%);
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.footer-div img{
+    color: hsl(167, 40%, 24%);
+}
+.footer-div .footer-logo p{
+    color: hsl(167, 40%, 24%);
+    font-size: 30px;
+    font-family: Barlow, serif;
+}
+.footer-div .footer-logo{
+    margin-bottom: 30px;
+}
+.footer-div .footer-nav{
+    margin-bottom: 50px;
+}
+
+
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
