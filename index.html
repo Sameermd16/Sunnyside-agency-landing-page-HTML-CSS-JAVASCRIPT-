@@ -10,8 +10,21 @@
   <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-
-  <header>
+  <header class="mobile-header">
+    <div class="logo-mobile">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="hamburger-icon" id="humburger">
+      <img src="images/icon-hamburger.svg" alt="">
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <button>CONTACT</button>
+    </nav>
+  </header>
+  <header class="desktop-header">
     <div class="logo-desktop">
       <img src="images/logo.svg" alt="">
     </div>
@@ -24,7 +37,11 @@
   </header>
   <small>WE ARE CREATIVES</small>
   <div class="header-img">
-    <img src="images/desktop/image-header.jpg" alt="" width="100%">
+    <picture>
+      <source srcset="images/desktop/image-header.jpg" media="(min-width: 651px)">
+      <source srcset="images/mobile/image-header.jpg" media="(max-width: 650px)">
+      <img src="images/desktop/image-header.jpg" alt="" width="100%">
+    </picture>
   </div>
   <div class="arrow">
     <img src="images/icon-arrow-down.svg" alt="">
@@ -42,10 +59,18 @@
       
     </div>
     <div class="grid egg">
-      <img src="images/desktop/image-transform.jpg" alt="">
+      <picture>
+        <source srcset="images/desktop/image-transform.jpg" media="(min-width: 651px)">
+        <source srcset="images/mobile/image-transform.jpg" media="(max-width: 650px)">
+        <img src="images/desktop/image-transform.jpg" alt="">
+      </picture>
     </div>
     <div class="grid glass">
-      <img src="images/desktop/image-stand-out.jpg" alt="">
+      <picture>
+        <source srcset="images/desktop/image-stand-out.jpg" media="(min-width: 651px)">
+        <source srcset="images/mobile/image-stand-out.jpg" media="(max-width: 650px)">
+        <img src="images/desktop/image-stand-out.jpg" alt="">
+      </picture>
     </div>
     <div class="grid text-grid-2">
       <article>
@@ -56,14 +81,22 @@
       </article>
     </div>
     <div class="grid berry">
-      <img src="images/desktop/image-graphic-design.jpg" alt="">
+      <picture>
+        <source srcset="images/desktop/image-graphic-design.jpg" media="(min-width: 651px)">
+        <source srcset="images/mobile/image-graphic-design.jpg" media="(max-width: 650px)">
+        <img src="images/desktop/image-graphic-design.jpg" alt="">
+      </picture>
       <div class="inner-div">
         <h2>Graphic Design</h2>
         <p>  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.        </p>
       </div>
     </div>
-    <div class="grid orange">
-      <img src="images/desktop/image-photography.jpg" alt="">
+    <div class="grid photography">
+      <picture>
+        <source srcset="images/desktop/image-photography.jpg" media="(min-width: 651px)" width="100%">
+        <source srcset="images/mobile/image-photography.jpg" media="(max-width: 650px)">
+        <img src="images/desktop/image-photography.jpg" alt="">
+      </picture>
       <div class="inner-div">
         <h2>Photography</h2>
         <p>    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.

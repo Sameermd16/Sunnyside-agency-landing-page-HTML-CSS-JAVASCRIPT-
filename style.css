@@ -67,6 +67,7 @@ small{
 }
 .grid img{
     width: 100%;
+    height: 100%;
 }
 article h2{
     margin-bottom: 30px;
@@ -103,7 +104,7 @@ article a{
     line-height: 25px;
     font-family: Barlow, serif;
 }
-.orange .inner-div{
+.photography .inner-div{
     position: absolute;
     top: 70%;
     left: 30%;
@@ -111,11 +112,11 @@ article a{
     text-align: center;
     color: hsl(198, 62%, 26%);
 }
-.orange .inner-div h2{
+.photography .inner-div h2{
     margin-bottom: 30px;
     font-family: Fraunces, serif;
 }
-.orange .inner-div p{
+.photography .inner-div p{
     line-height: 25px;
     font-family: Barlow, serif;
 }
@@ -149,7 +150,6 @@ aside h4{
 .flex-box p{
     margin-bottom: 40px;
     color: hsl(213, 9%, 39%);
-    
     padding: 0 20px;
     line-height: 25px;
 }
@@ -182,11 +182,18 @@ footer{
     color: hsl(167, 40%, 24%);
     margin-left: 30px;
 }
+.footer-nav a:hover{
+    color: white;
+}
 .socials-div ion-icon{
     color: hsl(167, 40%, 24%);
     width: 20px;
     height: 20px;
     margin-left: 20px;
+    cursor: pointer;
+}
+.socials-div ion-icon:hover{
+    color: white;
 }
 .footer-div img{
     color: hsl(167, 40%, 24%);
@@ -212,4 +219,112 @@ footer{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.mobile-header{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 650px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.65fr 0.6fr 0.65fr 1fr 1fr;
+        grid-template-areas: 
+        "egg"
+        "text-grid-1"
+        "glass"
+        "text-grid-2"
+        "berry"
+        "photography";
+    }
+    .egg{
+        grid-area: egg;
+    }
+    .text-grid-1{
+        grid-area: text-grid-1;
+        /* padding: 40px 10px; */
+    }
+    .glass{
+        grid-area: glass;
+    }
+    .text-grid-2{
+        grid-area: text-grid-2;
+        /* padding: 40px 10px; */
+    }
+    .berry{
+        grid-area: berry;
+    }
+    .orange{
+        grid-area: photography;
+    }
+    .flex-div{
+        flex-direction: column;
+    }
+    .gallery-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid{
+        text-align: center;
+    }
+    .berry .inner-div{
+        left: 0;
+    }
+    .photography .inner-div{
+        left: 0;
+    }
+    .desktop-header{
+        display: none;
+    }
+    
+    small{
+        left: 5%;
+        top: 25%;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .arrow{
+        top: 42%;
+        left: 45%;
+    }
+    br{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+    }
+    .flex-div{
+        gap: 50px;
+    }
+    .flex-box p{
+        margin-bottom: 20px;
+    }
+    .mobile-nav{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .mobile-nav a{
+        text-decoration: none;
+    }
+    .mobile-nav button{
+        color: white;
+        background-color: hsl(51, 100%, 49%);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 15px;
+    }
+    .mobile-header .hamburger-icon img{
+        cursor: pointer;
+    }
+   
 }
