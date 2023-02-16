@@ -13,6 +13,7 @@
 }
 body{
     max-width: 1440px;
+    margin: 0 auto;
 }
 header{
     width: 100%;
@@ -215,8 +216,20 @@ footer{
 .footer-div .footer-nav{
     margin-bottom: 50px;
 }
-
-
+.icon-wrap img{
+    animation: jumping-arrow 2s ease-in infinite;
+}
+@keyframes jumping-arrow{
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+    12.5%, 37.5%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+}
 
 .attribution {
   font-size: 13px;
@@ -239,7 +252,20 @@ footer{
     /* border: 1px solid black; */
     display: inline-block;
 }
-.learn-link::after{
+.text-grid-1 .learn-link::after{
+    content: "";
+    height: 10px;
+    width: 100%;
+    background-color: hsl(51, 100%, 49%);
+    top: 60%;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
+.text-grid-2 .learn-link::after{
     content: "";
     height: 10px;
     width: 100%;
@@ -250,10 +276,10 @@ footer{
     border-radius: 10px;
     z-index: -1;
     opacity: 0.3;
+    transition: all 0.3s ease-in-out;
 }
 .learn-link:hover::after{
     opacity: 1;
-    transition: all 0.3s ease-in-out;
 }
 @media only screen and (max-width: 650px){
     .grid-container{
@@ -306,18 +332,6 @@ footer{
     .desktop-header{
         display: none;
     }
-    
-    small{
-        left: 5%;
-        top: 25%;
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 5px;
-    }
-    .arrow{
-        top: 42%;
-        left: 45%;
-    }
     br{
         display: none;
     }
@@ -341,13 +355,26 @@ footer{
         justify-content: center;
         align-items: center;
         gap: 30px;
-    }
-    .mobile-nav{
         font-family: Barlow, serif;
     }
-    .mobile-nav a{
+    
+    .mobile-nav::after{
+        content: "";
+        top: -30px;
+        right: 0;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-right: 30px solid white;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transpraent;
+
+    }
+    nav a{
         text-decoration: none;
         color:  hsl(213, 9%, 39%);
+        cursor: pointer;
+        font-size: 18px;
     }
     .mobile-nav button{
         color: hsl(212, 27%, 19%);
@@ -357,8 +384,9 @@ footer{
         border-radius: 30px;
         font-family: Fraunces, serif;
         font-size: 16px;
+        cursor: pointer;
     }
-    .mobile-header .hamburger-icon img{
+    .hamburger-icon img{
         cursor: pointer;
     }
     .opacity-none{
@@ -369,5 +397,5 @@ footer{
         left: 25px;
         top: 130px;
     }
-   
+    
 }
